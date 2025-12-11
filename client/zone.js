@@ -4,7 +4,7 @@ const title = document.getElementById("zoneTitle");
 const message = document.getElementById("zoneMessage");
 const bgVideo = document.getElementById("bgVideo");
 
-const ws = new WebSocket("wss://https://emergingfuture.onrender.com");
+const ws = new WebSocket("wss://emergingfuture.onrender.com");
 
 let revealTimer = null;
 

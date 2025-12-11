@@ -81,7 +81,7 @@ const questions = [
     },
 ]
 
-const ws = new WebSocket ("wss://https://emergingfuture.onrender.com");
+const ws = new WebSocket ("wss://emergingfuture.onrender.com");
 const container = document.getElementById("questions");
 const submitbtn = document.getElementById("submitBtn");
 

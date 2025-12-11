@@ -1,7 +1,7 @@
 
 HomePgVideo.src = "video/HomePageBG.mp4";
 
-const ws = new WebSocket("wss://https://emergingfuture.onrender.com");
+const ws = new WebSocket("wss://emergingfuture.onrender.com");
 
 // When clicking Start, go to quiz page and tell server
 document.getElementById("startBtn").onclick = () => {
