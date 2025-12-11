@@ -83,7 +83,7 @@ const questions = [
 
 const ws = new WebSocket ("ws://localhost:3000");
 const container = document.getElementById("questions");
-const submitbtn = document.getElementById("button[type = 'submit]");
+const submitbtn = document.getElementById("submitBtn");
 
 let answers = [];
 
@@ -114,7 +114,7 @@ questions.forEach((q, i) => {
         input.addEventListener("change", () => {
             answers[i] = idx + 1;
 
-            ws.send(JSON, stringify({
+            ws.send(JSON.stringify({
                 question: i,
                 value: idx + 1
             }));

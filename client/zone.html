@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zone Result</title>
+    <link rel = "stylesheet" href = "zone.css">
+</head>
+<body>
+
+    <video id = "bgVideo" autoplay muted loop></video>
+
+    <div id = "loading">
+
+        <p class = "scan"> SYSTEM SCANNING . . .</p>
+            <div class = "dots">
+                <span>.</span>
+                <span>.</span>
+                <span>.</span>
+            </div>
+        <p id = "scanLine"> Loading Sequence Initiated </p>
+
+    </div>
+
+    <div id = "result" class = "hidden">
+        <h1 id = "zoneTitle"></h1>
+
+            <div class = "resultBox">
+                <p id = "zoneMessage"></p>
+            </div>
+
+    </div>
+
+    <button 
+        onClick = "window.location.href='index.html'">HOME PAGE
+    </button>
+
+    <script src = "zone.js"></script>
+    
+</body>
+</html>
