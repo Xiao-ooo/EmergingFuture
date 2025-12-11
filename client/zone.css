@@ -12,7 +12,7 @@
 /* Base layout */
 body {
     background-color: #000;
-    color: #00ffaa;
+    color: #1cffb3;
     font-family: "Courier New", monospace;
     text-align: center;
     padding: 80px 20px;
@@ -25,7 +25,12 @@ body {
     display: inline-block;
     padding: 20px 25px;
     border-radius: 10px;
-    background: rgba(0, 0, 0, 0.45);
+    background: rgba(0, 0, 0, 0.25);
+    max-width: 920px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    word-wrap: break-word;
 }
 
 /* Used to hide result until ready */
@@ -72,14 +77,14 @@ button {
     font-family: "Courier New", monospace;
     border: none;
     color: #000;
-    padding: 12px 200px;
+    padding: 10px 100px;
     font-size: 1em;
     border-radius: 6px;
     margin-top: 25px;
     cursor: pointer;
     transition: 0.3s;
     display: block;
-    margin: 25px auto 0;
+    margin: 20px auto 0;
 }
 
 button:hover {
