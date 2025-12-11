@@ -1,188 +1,88 @@
 const questions = [
     {
-        q: "When a protocol brushes against your own instinct, what stirs in you first?",
-        a: [
-            ["A discreet testing of your own path", 3],
-            ["A brief internal negotiation", 2],
-            ["A soft refusal beneath the surface", 4],
-            ["A quiet willingness to follow", 1]
-        ]
+        q: "When rules brush against your own impulses, what first rises within you?",
+        a: ["Follow it quietly without thought", "Weigh it against your own sense", "Experiment in small ways", "Question and resist it internally"]
     },
     {
-        q: "A calm internal signal says: wait. How does your body respond?",
-        a: [
-            ["You keep moving but remain aware", 3],
-            ["You continue as though you never heard it", 4],
-            ["You settle into the pause", 1],
-            ["You pause only for a moment", 2]
-        ]
+        q: "A silent signal urges patience. How does your mind respond?",
+        a: ["Trust the pause and wait", "Hesitate briefly before acting", "Consider it but move forward", "Act as if it didn’t speak"]
     },
     {
-        q: "When a rule is handed to you without clarity, what forms your first step?",
-        a: [
-            ["You shape your own interpretation", 3],
-            ["You let the ambiguity free you", 4],
-            ["You follow it as stated", 1],
-            ["You treat it cautiously", 2]
-        ]
+        q: "Faced with a guideline shrouded in ambiguity, how do you navigate it?",
+        a: ["Seek guidance and follow", "Interpret cautiously and stay safe", "Adapt it creatively", "Disregard it if inconvenient"]
     },
     {
-        q: "You observe someone bending a rule with precision. What draws forth your response?",
-        a: [
-            ["You mirror their deviation", 4],
-            ["You try to understand the reasoning", 3],
-            ["You watch without intervening", 2],
-            ["You signal it upward", 1]
-        ]
+        q: "You observe someone quietly bending an expectation. What stirs in you?",
+        a: ["Note it and follow protocol", "Observe quietly without judgment", "Understand their reasoning", "Experiment with their approach"]
     },
     {
-        q: "The system tells you: ‘Trust the sequence.’ Your mind answers with…",
-        a: [
-            ["A half-step of caution", 2],
-            ["A silent detachment from the message", 4],
-            ["A conditional acceptance", 3],
-            ["A full surrender to the instruction", 1]
-        ]
+        q: "You are invited to trust a process you don’t fully see. What do you do?",
+        a: ["Trust completely without question", "Proceed but with internal checks", "Follow only if it aligns with sense", "Suspend trust entirely"]
     },
     {
-        q: "A system alert instructs you to hold still. What rises in you?",
-        a: [
-            ["A deliberate continuation of movement", 4],
-            ["A slow, hesitant settling", 3],
-            ["Immediate compliance", 1],
-            ["A stillness edged with analysis", 2]
-        ]
+        q: "An alert asks you to stand still. How does your body and mind respond?",
+        a: ["Comply at once", "Pause and comply cautiously", "Remain still while analyzing", "Move with deliberate disregard"]
     },
     {
-        q: "Traditions arrive without explanation. How does your mind treat them?",
-        a: [
-            ["You reshape them quietly", 3],
-            ["You allow them to fade", 4],
-            ["You keep them intact", 1],
-            ["You respect them but remain apart", 2]
-        ]
+        q: "Ancient patterns come without explanation. How do you engage with them?",
+        a: ["Follow them as given", "Respectfully adapt them", "Observe but keep distance", "Let them fade naturally"]
     },
     {
-        q: "When authority speaks against what you’ve lived, what steadies you?",
-        a: [
-            ["A careful blend of both", 2],
-            ["Authority’s weight", 1],
-            ["Your own experience", 3],
-            ["Experience, unfiltered", 4]
-        ]
+        q: "When voices of authority contradict what you know, what guides your steps?",
+        a: ["Defer to authority", "Balance authority with experience", "Rely cautiously on experience", "Trust experience alone"]
     },
     {
-        q: "You encounter a locked terminal humming with restricted data. What do you do?",
-        a: [
-            ["Leave it untouched", 1],
-            ["Seek rightful access", 2],
-            ["Study it from a safe distance", 3],
-            ["Test its boundaries", 4]
-        ]
+        q: "You encounter a locked, humming archive. How does curiosity move within you?",
+        a: ["Leave it untouched", "Seek access properly", "Study it discreetly", "Probe its boundaries quietly"]
     },
     {
-        q: "Someone asks for loyalty with no explanation. What forms your reply?",
-        a: [
-            ["A polite holding back", 2],
-            ["A quiet refusal", 4],
-            ["An unreserved offering", 1],
-            ["A conditional agreement", 3]
-        ]
+        q: "Someone asks for allegiance without reason. How do you respond internally?",
+        a: ["Offer it without condition", "Offer cautiously and conditionally", "Politely withhold", "Decline firmly"]
     },
     {
-        q: "You’re informed a choice has been made on your behalf. What brews within you?",
-        a: [
-            ["A muted resistance", 3],
-            ["A steady pushback", 4],
-            ["A gentle acceptance", 2],
-            ["Relief at the certainty", 1]
-        ]
+        q: "A choice has been decided on your behalf. How do you experience it?",
+        a: ["Relief in certainty", "Quiet acceptance", "Subtle resistance", "Internal defiance"]
     },
     {
-        q: "When moving with a group through uncertainty, how do you place yourself?",
-        a: [
-            ["Centered within", 1],
-            ["Near the edge, observing", 3],
-            ["Close, but self-directed", 2],
-            ["Separate from their path", 4]
-        ]
+        q: "Moving with a group through uncertainty, where do you place yourself?",
+        a: ["Stay integrated and centered", "Follow loosely with awareness", "Stay nearby but self-directed", "Separate and explore independently"]
     },
     {
-        q: "Your intuition and an order collide. Which leads you?",
-        a: [
-            ["The order, without hesitation", 1],
-            ["The order, though reluctantly", 2],
-            ["Intuition, quietly", 3],
-            ["Intuition, unmistakably", 4]
-        ]
+        q: "When inner instinct and an external command collide, which voice leads?",
+        a: ["Follow the order immediately", "Follow but with hesitation", "Trust intuition quietly", "Trust intuition decisively"]
     },
     {
-        q: "You’re corrected for an error you didn’t commit. What do you choose?",
-        a: [
-            ["A polite clarification", 3],
-            ["A calm acceptance", 1],
-            ["A clear refusal", 4],
-            ["A silent acceptance with questions inside", 2]
-        ]
+        q: "Corrected for an error you didn’t make, how does your mind settle?",
+        a: ["Accept gracefully", "Accept but question internally", "Clarify politely", "Reject it firmly"]
     },
     {
-        q: "Someone claims to know 'the proper way.' How does your reasoning move?",
-        a: [
-            ["You adopt it as offered", 1],
-            ["You test it for yourself", 3],
-            ["You consider it and hold it loosely", 2],
-            ["You ignore the claim", 4]
-        ]
+        q: "Someone insists there is only one 'proper way.' How do you respond?",
+        a: ["Adopt it with trust", "Consider it thoughtfully", "Test and explore it", "Ignore or reinterpret it"]
     },
     {
-        q: "A leader requests silence. How does your silence appear?",
-        a: [
-            ["An immediate stillness", 1],
-            ["A watchful quiet", 2],
-            ["A continued murmur", 4],
-            ["A gradual dimming of your voice", 3]
-        ]
+        q: "A call for silence is made. How does your presence shift?",
+        a: ["Fall into silence immediately", "Gradually quiet yourself", "Observe and adjust", "Continue your own expression"]
     },
     {
-        q: "An unfamiliar procedure starts without warning. What emerges within you?",
-        a: [
-            ["You resist its pull", 4],
-            ["You fall in step", 1],
-            ["You watch first", 2],
-            ["You question its risks", 3]
-        ]
+        q: "A new procedure unfolds unexpectedly. What guides your first action?",
+        a: ["Follow along cautiously", "Observe before acting", "Analyze potential risks", "Resist or modify it"]
     },
     {
-        q: "You’re given access to something restricted. How do you guard it?",
-        a: [
-            ["You move carefully with it", 2],
-            ["You protect it sharply", 1],
-            ["You release it freely", 4],
-            ["You weigh its purpose", 3]
-        ]
+        q: "Access is granted to knowledge few may hold. How do you move with it?",
+        a: ["Guard it responsibly", "Use it carefully", "Reflect on its purpose", "Share selectively or freely"]
     },
     {
-        q: "Someone tells you not to question. Where does your mind go?",
-        a: [
-            ["You accept, but with curiosity beneath", 2],
-            ["You honor the instruction", 1],
-            ["You question internally", 3],
-            ["You probe the boundary openly", 4]
-        ]
+        q: "An instruction forbids questioning. What internal dialogue emerges?",
+        a: ["Accept it fully", "Accept while pondering", "Consider it internally", "Probe and challenge openly"]
     },
     {
-        q: "You sense your compliance is being measured. How do you calibrate yourself?",
-        a: [
-            ["You stabilize your usual patterns", 2],
-            ["You maintain your natural behavior", 3],
-            ["You drift away from compliance", 4],
-            ["You sharpen your precision", 1]
-        ]
+        q: "You sense your conformity is being observed. How does this shape your behavior?",
+        a: ["Adjust subtly to expectations", "Maintain steady patterns", "Act naturally but cautiously", "Shift intentionally away from conformity"]
     }
 ];
 
 
-const ws = new WebSocket ("wss://emergingfuture.onrender.com");
+const ws = new WebSocket("wss://emergingfuture.onrender.com");
 const container = document.getElementById("questions");
 const submitbtn = document.getElementById("submitBtn");
 
@@ -203,42 +103,38 @@ questions.forEach((q, i) => {
 
     if (i !== 0) block.style.display = "none";
 
-    block.innerHTML = `<p> ${ i + 1 }. ${ q.q } </p>`;
-
+    block.innerHTML = `<p> ${i + 1}. ${q.q} </p>`;
 
     q.a.forEach((opt, idx) => {
-        const text = opt[0];
-        const val = opt[1];
-
         const input = document.createElement("input");
 
         input.type = "radio";
         input.name = "q" + i;
-        input.value = val;
+        input.value = idx + 1;
 
         input.addEventListener("change", () => {
-            answers[i] = val;
+            answers[i] = idx + 1;
 
             ws.send(JSON.stringify({
                 question: i,
-                value: val
+                value: idx + 1
             }));
 
             //after one answer is clicked, revealed the next question block
-            if (i + 1 < questions.length){
+            if (i + 1 < questions.length) {
                 document.getElementById("q" + (i + 1)).style.display = "block";
-      } else {
-        submitBtn.style.display = "block";
-        }
-    });
+            } else {
+                submitBtn.style.display = "block";
+            }
+        });
 
-    const label = document.createElement("label");
+        const label = document.createElement("label");
 
-    label.appendChild(input);
-    label.appendChild(document.createTextNode(opt));
-    
-    block.appendChild(label);
-    block.appendChild(document.createElement("br"));
+        label.appendChild(input);
+        label.appendChild(document.createTextNode(opt));
+
+        block.appendChild(label);
+        block.appendChild(document.createElement("br"));
     });
 
     container.appendChild(block);
@@ -248,51 +144,51 @@ questions.forEach((q, i) => {
 // sends the action doned over to the other tab live tunnel
 ws.onmessage = (event) => {
     const msg = JSON.parse(event.data);
-  
+
     if (typeof msg.question === "number") {
-      answers[msg.question] = msg.value;
-  
-      const btn = document.querySelector(
-        `input[name="q${msg.question}"][value="${msg.value}"]`
-      );
-  
-      if (btn) {
-        btn.checked = true;
-  
-        // Reveal next question
-        if (msg.question + 1 < questions.length) {
-          document.getElementById("q" + (msg.question + 1)).style.display = "block";
-        } else {
-          submitBtn.style.display = "block";
+        answers[msg.question] = msg.value;
+
+        const btn = document.querySelector(
+            `input[name="q${msg.question}"][value="${msg.value}"]`
+        );
+
+        if (btn) {
+            btn.checked = true;
+
+            // Reveal next question
+            if (msg.question + 1 < questions.length) {
+                document.getElementById("q" + (msg.question + 1)).style.display = "block";
+            } else {
+                submitBtn.style.display = "block";
+            }
         }
-      }
     }
-  
+
     if (msg.page === "zone") {
-      //go get the saved zone number in local storage, and converted it to numbers by parseInt
-      //convert the message of the zone number recieved in the correct format
-      const zone = parseInt(localStorage.getItem("zone")) || 1;
-      window.location.href = `zone.html?zone=${zone}`;
+        //go get the saved zone number in local storage, and converted it to numbers by parseInt
+        //convert the message of the zone number recieved in the correct format
+        const zone = parseInt(localStorage.getItem("zone")) || 1;
+        window.location.href = `zone.html?zone=${zone}`;
     }
-  };
-  
-  // Submit logic
-  document.getElementById("quizForm").onsubmit = (e) => {
+};
+
+// Submit logic
+document.getElementById("quizForm").onsubmit = (e) => {
     e.preventDefault();
-  
+
     let total = answers.reduce((acc, v) => acc + (parseInt(v) || 0), 0);
-  
+
     let zone;
-  
+
     if (total <= 30) zone = 1;
     else if (total <= 45) zone = 2;
     else if (total <= 60) zone = 3;
     else zone = 4;
-  
+
     localStorage.setItem("zone", zone);
-  
+
     ws.send(JSON.stringify({ page: "zone", zone }));
     window.location.href = "zone.html";
-  };
+};
 
 
