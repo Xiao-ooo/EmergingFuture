@@ -81,7 +81,7 @@ const questions = [
     },
 ]
 
-const ws = new WebSocket ("ws://localhost:3000");
+const ws = new WebSocket ("wss://https://emergingfuture.onrender.com");
 const container = document.getElementById("questions");
 const submitbtn = document.getElementById("submitBtn");
 
@@ -140,7 +140,7 @@ questions.forEach((q, i) => {
 
 })
 
-// Sync WebSocket updates
+// sends the action doned over to the other tab live tunnel
 ws.onmessage = (event) => {
     const msg = JSON.parse(event.data);
   
@@ -164,6 +164,8 @@ ws.onmessage = (event) => {
     }
   
     if (msg.page === "zone") {
+      //go get the saved zone number in local storage, and converted it to numbers by parseInt
+      //convert the message of the zone number recieved in the correct format
       const zone = parseInt(localStorage.getItem("zone")) || 1;
       window.location.href = `zone.html?zone=${zone}`;
     }
