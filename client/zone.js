@@ -71,3 +71,10 @@ ws.onmessage = (e) => {
         }
       }
 } 
+
+//when click the button shared the data and all go to that page
+document.getElementById("goHome").addEventListener("click", () => {
+    window.location.href = "index.html";
+    ws.send(JSON.stringify({ page: "index" }));
+  });
+  

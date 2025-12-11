@@ -7,64 +7,67 @@
     height: 100%;
     object-fit: cover;
     z-index: -1;
-  }
-  
-  /* Base layout */
-  body {
+}
+
+/* Base layout */
+body {
     background-color: #000;
     color: #00ffaa;
     font-family: "Courier New", monospace;
     text-align: center;
     padding: 80px 20px;
     margin: 0;
-  }
-  
-  .resultBox {
+}
+
+.resultBox {
     margin-top: 30px;
     text-align: left;
     display: inline-block;
     padding: 20px 25px;
     border-radius: 10px;
-    background: rgba(0, 0, 0, 0.45);  
-  }
-  
-  /* Used to hide result until ready */
-  .hidden {
+    background: rgba(0, 0, 0, 0.45);
+}
+
+/* Used to hide result until ready */
+.hidden {
     display: none;
-  }
-  
-  /* Blinking dots under "SYSTEM SCANNING..." */
-  .dots span {
+}
+
+/* Blinking dots under "SYSTEM SCANNING..." */
+.dots span {
     animation: blink 1.2s infinite;
-  }
-  
-  .dots span:nth-child(2) {
+}
+
+.dots span:nth-child(2) {
     animation-delay: 0.2s;
-  }
-  
-  .dots span:nth-child(3) {
+}
+
+.dots span:nth-child(3) {
     animation-delay: 0.4s;
-  }
-  
-  /* ... scanning animation opacity becomes lighter when its popping new dots */
-  @keyframes blink {
-    0%, 100% {
-      opacity: 0.1;
+}
+
+/* ... scanning animation opacity becomes lighter when its popping new dots */
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 0.1;
     }
+
     50% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  
-  /* Zone title */
-  #result h1 {
+}
+
+/* Zone title */
+#result h1 {
     color: #00ffcc;
     font-size: 3em;
     margin-bottom: 20px;
     margin: 25px auto 0;
-  }
-  
-  button {
+}
+
+button {
     background: #00ffaa;
     font-family: "Courier New", monospace;
     border: none;
@@ -77,10 +80,9 @@
     transition: 0.3s;
     display: block;
     margin: 25px auto 0;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background: #00cc88;
     transform: scale(1.08);
-  }
-  
+}
