@@ -43,3 +43,31 @@ function revealResult (zone) {
     showZone(zone);
 
 }
+
+//remember the zone 
+const storedZone = parseInt(localStorage.getItem("zone")) || 1;
+
+revealTimer = setTimeout (() => revealResult(storedZone), 3000);
+
+//now shared the data lively that got processed
+ws.onmessage = (e) => {
+    const msg = JSON.parse(e.data);
+
+    if(typeof msg.zone === "number") {
+        localStorage.setItem ("zone", msg.zone);
+        revealResult(msg.zone);
+    }
+
+    //this lets user to live update which page to go, and directly go there
+    //if the message recieved shows the location is in index, go to index, if its quiz -> quiz. This shares it to the other tab. 
+    if (msg.page) {
+        if (msg.page === "index") window.location.href = "index.html";
+
+        if (msg.page === "quiz") window.location.href = "quiz.html";
+
+        if (msg.page === "zone") {
+          const shareZone = parseInt(localStorage.getItem("zone")) || 1;
+          window.location.href = `zone.html?zone=${zone}`;
+        }
+      }
+} 
